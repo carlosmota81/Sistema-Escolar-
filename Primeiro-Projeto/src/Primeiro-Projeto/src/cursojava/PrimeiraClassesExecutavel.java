@@ -14,6 +14,8 @@ public class PrimeiraClassesExecutavel {
 
 	public static void main(String[] args) {
 		
+		try {
+		
 		String login = JOptionPane.showInputDialog("Informe o Login");
 		String senha = JOptionPane.showInputDialog("Informe a senha");
 
@@ -26,10 +28,10 @@ public class PrimeiraClassesExecutavel {
 		
 	
 		
-		for (int qtd =1; qtd <=5; qtd++) {
+		for (int qtd =1; qtd <=2; qtd++) {
 		
 		String nome =JOptionPane.showInputDialog("Qual o nome "+qtd+" ?");
-		String idade =JOptionPane.showInputDialog("Qual a idade "+qtd+" ?");
+		/*String idade =JOptionPane.showInputDialog("Qual a idade "+qtd+" ?");
 		String nascimento =JOptionPane.showInputDialog("Qual data de Nascimento ?");
 		String rg =JOptionPane.showInputDialog("Qual o RG ?");
 		String cpf =JOptionPane.showInputDialog("qula o CPF ?");
@@ -37,12 +39,12 @@ public class PrimeiraClassesExecutavel {
 		String pai =JOptionPane.showInputDialog("Nome Pai ?");
 		String matricula =JOptionPane.showInputDialog("Data da Matricula ?");
 		String serie =JOptionPane.showInputDialog("Qual a Seríe ?");
-		String escola =JOptionPane.showInputDialog("Nome da Escola ?");
+		String escola =JOptionPane.showInputDialog("Nome da Escola ?");*/
 		
 			Aluno aluno = new Aluno();
 			
 			aluno.setNome(nome);
-			aluno.setIdade(Integer.valueOf(idade));
+			/*aluno.setIdade(Integer.valueOf(idade));
 			aluno.setDataNascimento(nascimento);
 			aluno.setRegistroGeral(rg);
 			aluno.setNumeroCpf(cpf);
@@ -50,9 +52,9 @@ public class PrimeiraClassesExecutavel {
 			aluno.setNomePai(pai);
 			aluno.setDataMatricula(matricula);
 			aluno.setSerieMatriculado(serie);
-			aluno.setNomeEscola(escola);
+			aluno.setNomeEscola(escola);*/
 		
-		for (int pos = 1; pos <= 1; pos++) {
+		for (int pos = 1; pos <= 2; pos++) {
 			String nomeDisciplina = JOptionPane.showInputDialog("Qual a Disciplina "+pos+" ?");
 			String notaDisciplina = JOptionPane.showInputDialog("nota da Disciplina "+pos+" ?");
 			
@@ -116,8 +118,14 @@ public class PrimeiraClassesExecutavel {
 	}
 	}
 	
+		}catch (Exception e) {
+			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "ERRO ao processar");
+		}
 		
 	}
+	
 	}
+
 
 
