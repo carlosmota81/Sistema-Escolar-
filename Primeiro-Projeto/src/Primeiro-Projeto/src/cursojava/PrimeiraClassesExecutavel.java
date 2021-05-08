@@ -54,13 +54,13 @@ public class PrimeiraClassesExecutavel {
 			aluno.setSerieMatriculado(serie);
 			aluno.setNomeEscola(escola);*/
 		
-		for (int pos = 1; pos <= 2; pos++) {
+		for (int pos = 1; pos <= 4; pos++) {
 			String nomeDisciplina = JOptionPane.showInputDialog("Qual a Disciplina "+pos+" ?");
 			String notaDisciplina = JOptionPane.showInputDialog("nota da Disciplina "+pos+" ?");
 			
 			Disciplina disciplina = new Disciplina();
 			disciplina.setDisciplina(nomeDisciplina);
-			disciplina.setNota(Double.valueOf(notaDisciplina));
+			//disciplina.setNota(Double.valueOf(notaDisciplina));
 			
 			aluno.getDisciplinas().add(disciplina);
 		}
